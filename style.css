@@ -1,0 +1,210 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Hanken Grotesk",'url(https://file%2B.vscode-resource.vscode-cdn.net/Users/lakinduperera/Documents/frontent%20mentor%20projects/Results%20summary%20component/results-summary-component-main/design/active-states.jpg?version%3D1722937799600)Times New Roman';
+    font-weight:  500, 700, 800;
+    background-color: aliceblue;
+}
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 700px;
+    margin: 0;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8%;
+    background-color: white;
+   
+}
+/* card 1 css */
+.big-card1{
+    
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%) );
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: hsl(0, 0%, 100%);
+    border-radius: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    
+    
+}
+.heading{
+    font-size: 25px;
+    justify-content: center;
+    color: rgba(184, 180, 180, 0.92);
+    padding: 10px;
+}
+#my-result{
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1) ,hsla(241, 72%, 46%, 0));
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0px;
+    border: 0px;
+    margin-bottom: 10px;
+}
+#mark{
+    margin-top: 40px;
+    font-size: 60px;
+   
+}
+#outOf{
+    color: rgba(163, 161, 161, 0.864);
+}
+#great{
+    margin-bottom: 10px;
+}
+#para{
+    color: rgba(184, 180, 180, 0.92);
+    text-align: center;
+   
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* card 2 css */
+.big-card2{
+    display: flex; 
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 20px;
+    width: 280px;
+ }
+.summary-card{
+    line-height: 2;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+#reation{
+    margin-right: 80px;
+    margin-left: 10px;
+    color: hsl(0, 100%, 67%);
+}
+#memory{
+    margin-right: 80px;
+    margin-left: 10px;
+    color: hsl(39, 100%, 56%);
+}
+#varbal{
+    margin-right: 92px;
+    margin-left: 10px;
+    color: hsl(166, 100%, 37%);
+}
+#visual{
+    margin-right: 94px;
+    margin-left: 10px;
+    color: hsl(234, 85%, 45%);
+}
+
+.card1{
+    /* From https://css.glass */
+    background: rgba(255, 87, 87, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border: 1px solid rgba(255, 87, 87, 0.12);
+    
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.card2{
+    /* From https://css.glass */
+    background: rgba(255, 176, 31, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(255, 176, 31, 0.12);
+
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.card3{
+    /* From https://css.glass */
+    background: rgba(0, 189, 145, 0.11);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(0, 189, 145, 0.06);
+
+    margin-bottom: 20px;
+    padding: 10px;
+    
+}
+
+.card4{
+    /* From https://css.glass */
+    background: rgba(17, 37, 212, 0.08);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(17, 37, 212, 0.06);
+
+    margin-bottom: 20px;
+    padding: 10px;
+}
+#btn{
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 40px;
+
+}
+.button:focus {
+    outline: none; 
+  }
+
+.btn-1 {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start; /* Changed to flex-start for left alignment */
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .big-card1{
+        margin: 0px;
+        border: 0px;
+    }
+    .big-card2{
+        margin: 0px;
+        border: 0px;
+    }
+    #btn{
+        width: 100%;
+        
+    }
+    .btn-1{
+        width: 100%;
+    }
+  }
